@@ -3,6 +3,8 @@ var React = require('react');
 var ComponentName = React.createClass({
 
 
+    // < --------------  Component specs ------------------> //
+
     // **************************************************************************************************************//
     // The displayName string is used in debugging messages. JSX sets this value automatically.
     // **************************************************************************************************************//
@@ -93,14 +95,14 @@ var ComponentName = React.createClass({
     // < --------------  Lifecycle Methods ------------------> //
 
     // **************************************************************************************************************//
-    // Invoked once, both on the client and server, immediately before the initial rendering occurs.
+    // Invoked once, both on the client and server, immediately before the initial rendering occurs. [initial renders]
     // **************************************************************************************************************//
     componentWillMount: function(){
         // Calling setState here does not cause a re-render
     },
 
     // **************************************************************************************************************//
-    // Invoked on the client immediately after the initial rendering occurs.
+    // Invoked on the client immediately after the initial rendering occurs.[initial renders]
     // **************************************************************************************************************//
     componentDidMount: function(){
         // You now have access to this.getDOMNode()
