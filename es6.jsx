@@ -6,20 +6,28 @@ let {
 } = React;
 
 class MyReactComponent extends Component{
-  constructor(props) {
-      // Operations usually carried out in componentWillMount go here
+    
+    static propTypes = {name: React.PropTypes.string};
+    static defaultProps = { count: 0 };
+    state = {count: this.props.count};
+
+    constructor(props) {
       super(props);
-    }
-    // defaults live as static properties 
-    static propTypes = {
-      name: PropTypes.bool.isRequired,
+      state = { count: props.count };
     }
 
-    static defaultProps  = {
-      name: "Hello ES 6 ",
+    handleEvent = () => {
+      this.setState({count: this.state.count + 1});
     }
-    
+
     render() {
-      return <div>{this.props.name}</div>;
+      return (
+        <div className="greeter">
+          <p key="greeter">Hello, {this.props.name}!</p>
+          <div onClick={this.handleEvent}>
+            Clicks: {this.state.count}
+          </div>
+        </div>
+        );
     }
 };
