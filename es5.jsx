@@ -142,7 +142,7 @@ var ComponentName = React.createClass({
     },
 
     // **************************************************************************************************************//
-    // Invoked immediately before a component is unmounted from the DOM.
+    // Invoked immediately before a component is unmounted from the DOM.[initial renders]
     // **************************************************************************************************************//
     componentWillUnmount: function(){
     }
