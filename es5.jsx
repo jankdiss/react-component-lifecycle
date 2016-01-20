@@ -35,7 +35,16 @@ var ComponentName = React.createClass({
     // **************************************************************************************************************//
     // The propTypes object allows you to validate props being passed to your components.
     // **************************************************************************************************************//
-    propTypes: {},
+    propTypes: {
+        // ------------------- Prop types --------------------------------------
+        // prop: React.PropTypes.string,
+        // prop: React.PropTypes.number,
+        // prop: React.PropTypes.object,
+        // prop: React.PropTypes.func,
+        // prop: React.PropTypes.bool,
+        // prop: React.PropTypes.any,
+    },
+    
 
     // **************************************************************************************************************//
     // The mixins array allows you to use mixins to share behavior among multiple components.
